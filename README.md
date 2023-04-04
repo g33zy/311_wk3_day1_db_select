@@ -44,20 +44,28 @@ Also, put the answers in the "Query Responses" section of this README.
 ## Query Responses
 
 1.
-  * How many rows were returned:
-  * First name of the first user:
+  * How many rows were returned: 7
+  * First name of the first user: Mitsue Tollner
 
 2.
-  * How many rows were returned:
-  * What states do they live in:
+  * How many rows were returned: 2
+  * What states do they live in: MD, TX
 
 3.
-  * How many rows were returned:
-  * What's the last email on the list:
+  * How many rows were returned: 6
+  * What's the last email on the list: nichelle_meteer@meteer.com
+
+  
+-- question 1
+SELECT * FROM admin.users WHERE city='chicago';
+-- question 2
+SELECT state FROM USERS WHERE first_name='Glory';
+-- question 3
+SELECT * FROM USERS WHERE PHONE1 LIKE '773%';
 
 ## Summary
 
 Think about how this data is laid out. Feel free to look in the `initialize.sql` file to see the raw data.
 
-* Do you think it would be easier or harder to search through this data manually or using SQL?
-* What about when the dataset gets larger?
+* Do you think it would be easier or harder to search through this data manually or using SQL? SQL will be easier to find data
+* What about when the dataset gets larger? Especially
